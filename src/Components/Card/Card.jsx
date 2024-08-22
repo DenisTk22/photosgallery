@@ -1,6 +1,6 @@
 import './jallery__card.css';
 
-export const Card = (urlPhoto) => {
+export default function Card({urlPhoto})  {
 
     return (
         <div className="jallery__card">
