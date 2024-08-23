@@ -1,0 +1,15 @@
+
+.jallery__card {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jallery__img {
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+}

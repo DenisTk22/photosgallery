@@ -1,7 +1,7 @@
-
-
 import Card from '../Card/Card';
 import { photos } from '../../photos';
+
+import './jallery.css';
 
 function Jallery() {
 

@@ -1,4 +1,4 @@
-import './jallery__card.css';
+import './card.css';
 
 export default function Card({urlPhoto})  {
 
