@@ -6,3 +6,11 @@
     justify-content: center;
     gap: 20px;
 }
+
+.selectedPhoto {
+    z-index: 10;
+    width: 500px;
+    position: absolute;
+    left: 75%;
+    top:50%
+}

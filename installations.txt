@@ -1,0 +1,7 @@
+
+npm create vite@latest .  -- --template react
+
+npm install mobx --save 
+npm install mobx-react --save 
+npm install --save-dev @babel/plugin-proposal-decorators
+npm install --save-dev mobx-react-devtools --force
