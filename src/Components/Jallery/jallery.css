@@ -5,12 +5,14 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    position: relative;
 }
 
-.selectedPhoto {
+.active {
+    color: #000;
     z-index: 10;
     width: 500px;
-    position: absolute;
+    /* position: absolute;
     left: 75%;
-    top:50%
+    top:50% */
 }
