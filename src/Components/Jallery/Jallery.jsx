@@ -5,12 +5,8 @@ import React, { Component } from 'react';
 // import axios from 'axios';
 import Card from '../Card/Card';
 import { photos } from '../../photos';
-
 import './jallery.css';
 
-// configure({ enforceActions: 'observed' });
-
-// @observer 
 export default class Jallery extends Component {
     // constructor(props) {
     //     super(props);
@@ -20,7 +16,7 @@ export default class Jallery extends Component {
     // }
 
     state = {
-        activeId: null  // nothing selected by default, but this is up to you...
+        activeId: null // первоначальное значение
       }
 
       handleClick(e, id) {
@@ -65,30 +61,16 @@ export default class Jallery extends Component {
     //         .catch(console.error('Ошибка при получении данных'))
     // }
 
-    //     console.log(getPhotosUnicNumber('http://localhost:8055/items/photosgallery'));
-
-        // const getPhotosUnicNumber = async () => {
-        //     try {
-        //         const response = await axios.get('http://localhost:8055/items/photosgallery');
-        //         return response;
-        //     } catch (error) {
-        //         console.error('Ошибка при получении данных', error);
-        //     }
-        // }
-
-        // console.log(getPhotosUnicNumber());
 
         return (
             <main className='jallery'>
                 {photos.map((photo) => (
                         <div key={photo}  className={`jallery__card`}>
-                            <img className={`jallery__img ${this.state.activeId ? "active" : ""}`} //
+                            <img className={`jallery__img ${this.state.activeId ? "active" : ""}`}
                                  src={photo} 
                                  alt="card" 
                                  onClick= {this.handleClick.bind(this, photo)} />
                         </div>
-
-                    // <Card key={photo} className={this.state.activeId === photo && 'active'} urlPhoto={photo} onClick={this.handleClick.bind(this, photo)} />
                 ))}
             </main>
         )

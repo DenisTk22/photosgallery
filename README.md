@@ -1,8 +1,15 @@
 # React + Vite
+- приложение Photo Gallery для отображения фотографий с сервера directus и их просмотра на React + Vite
+- запуск приложения из командной строки: npm run dev
+- вход в directus       ADMIN_EMAIL: "admin@example.com"
+                        ADMIN_PASSWORD: "d1r3ctu5"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Не реализовано:
+- подключение frontend к backend
+- отображение одной фото по клику и закрывание фото
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Реализовано:
+- подключение github репозитория
+- развертывание сервера directus с помощью docker
+- отображение галерии фотографий из локальной папки
+- стилизация галерии
