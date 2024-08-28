@@ -1,8 +1,4 @@
-// import * as url from 'url';
 import React, { Component } from 'react';
-// import { observer } from 'mobx-react';
-// import { observable, action, makeObservable, computed, configure } from 'mobx';
-// import axios from 'axios';
 import Card from '../Card/Card';
 import { photos } from '../../photos';
 import './jallery.css';
