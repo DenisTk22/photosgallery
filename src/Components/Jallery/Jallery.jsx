@@ -6,34 +6,24 @@ import './jallery.css';
 export default class Jallery extends Component {
     // constructor(props) {
     //     super(props);
-    //     this.state = {
-    //         isClassActive: false,
-    //     };
+    //     this.state = {'active': false};
     // }
 
     state = {
-        activeId: null // первоначальное значение
+        active: null // первоначальное значение
       }
 
       handleClick(e, id) {
-        this.setState({ activeId: id })
+        this.setState({ active: id })
       }
 
-    // Функция переключения класса 
-    // toggleClass = () => {
-    //     this.setState({
-    //         isClassActive: !this.state.isClassActive,
-    //     });
-    // };
-
-    // photoSelected = (photo) => {
-    //     console.log('photo', photo.src);
-    //     return (
-    //         <div className='selectedPhoto'>
-    //             {photo}
-    //         </div>
-    //     )
-    // }
+      toggleClass(e) {
+        if(e.target.parentElement.classList.contains('active')){
+          e.target.parentElement.classList.remove('active')
+        }else{
+          e.target.parentElement.classList.add('active')
+        }
+      }
 
 
     // const displayPhotos = (data) => {
@@ -62,10 +52,11 @@ export default class Jallery extends Component {
             <main className='jallery'>
                 {photos.map((photo) => (
                         <div key={photo}  className={`jallery__card`}>
-                            <img className={`jallery__img ${this.state.activeId ? "active" : ""}`}
+                            <img className={`jallery__img`} //className={`jallery__img ${this.state.active ? "active" : ""}`
                                  src={photo} 
                                  alt="card" 
-                                 onClick= {this.handleClick.bind(this, photo)} />
+                                 onClick= {this.toggleClass.bind(this)} />  
+                                 {/* onClick= {this.toggleClass.bind(this, photo)} */}
                         </div>
                 ))}
             </main>
