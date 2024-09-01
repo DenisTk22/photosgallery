@@ -12,4 +12,14 @@
 - подключение github репозитория
 - развертывание сервера directus с помощью docker
 - отображение галерии фотографий из локальной папки
-- стилизация галерии, mobX
+- стилизация галерии
+- mobX
+
+Ввод пароля:
+http://localhost:8055/admin/login?redirect=/settings/project
+JSON галереи
+http://localhost:8055/items/photosgallery
+JSON элемента по id
+http://localhost:8055/items/photosgallery/1
+получение фото по photo:2d241d76-2ba1-4e93-9d62-e6392a93c5b6
+http://localhost:8055/assets/2d241d76-2ba1-4e93-9d62-e6392a93c5b6
