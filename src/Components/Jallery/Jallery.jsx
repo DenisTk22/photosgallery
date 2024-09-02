@@ -1,11 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 import { photos } from '../../photos';
-import './jallery.css';
-import { observer } from 'mobx-react';
-import modal from '../../store/modal';
+import '../../css/style.css';
+import Card from '../Card/Card';
 
-const Jallery = observer(() => {
+const Jallery = () => {
 
     const url = 'http://localhost:8055/items/photosgallery'
 
@@ -24,19 +23,15 @@ const Jallery = observer(() => {
             .then(response => console.log('Данные>>', response.data))
             .catch(error => console.log('Ошибка>>', error))
 
-
     return (
         <main className='jallery'>
             {photos.map((photo) => (
-                <div key={photo} className={`jallery__card ${modal.activeId === photo && modal.active}`}>
-                    <img className={`jallery__img`}
-                         src={photo}
-                         alt="card"
-                         onClick={() => modal.handleClick(photo)} />
-                </div>
+                <Card 
+                    key={photo}
+                    urlPhoto={photo} 
+                />
             ))}
         </main>
-    )
-})
+    )}
 
-export default Jallery
+export default Jallery;

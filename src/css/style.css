@@ -1,0 +1,38 @@
+.jallery {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+.jallery__card {
+  background-color: #fff;
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jallery__img {
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
+}
+
+.active {
+  background-color: aqua;
+  z-index: 10;
+  width: 70%;
+  padding: 10px;
+  position: fixed;
+  top: 5%;
+}
+
+@media (max-width: 854px) {
+  .active {
+    width: 100%;
+    top: 20%;
+  }
+}/*# sourceMappingURL=style.css.map */

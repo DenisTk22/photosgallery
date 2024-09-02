@@ -18,6 +18,4 @@ services:
       WEBSOCKETS_ENABLED: "true"
 
       CORS_ENABLED: "true"
-      CORS_ORIGIN: "true"
-      CORS_ALLOWED_HEADERS: "http://localhost:5173/"
-
+      CORS_ORIGIN: "http://localhost:5173"
