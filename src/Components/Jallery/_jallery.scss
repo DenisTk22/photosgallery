@@ -8,6 +8,8 @@
     position: relative;
 
     &__card {
+        display: flex;
+        flex-direction: column;
         background-color: #fff;
         width: 350px;
         border-radius: 10px;

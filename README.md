@@ -12,10 +12,15 @@
 - подключение github репозитория
 - развертывание сервера directus с помощью docker
 - отображение галерии фотографий из локальной папки
-- стилизация галерии
-- mobX
+- стилизация галерии, sass, адаптив под мобильную версию
+- state manager mobX
 
-Ввод пароля:
+**Развертывание сервера directus на docker**
+- создать папку directus в корне проекта
+- в папке directus создать три папки: database, extentions, uploads и файл docker-compose.yml (содержание файла docker-compose.yml взять из документации directus)
+- перейти в командной строке в папку directus и запустить команду> docker compose up
+
+**Ввод пароля:**
 http://localhost:8055/admin/login?redirect=/settings/project
 JSON галереи
 http://localhost:8055/items/photosgallery
