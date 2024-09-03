@@ -1,4 +1,6 @@
 npm create vite@latest .  -- --template react
+npm run dev - Запуск приложения vite (из файла package.json > "scripts": > "dev": "vite"
+npm i - установка зависимостей из файла package.json
 
 npm install mobx --save 
 npm install mobx-react --save 
