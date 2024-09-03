@@ -1,10 +1,14 @@
+docker compose up - развертывание контейнера docker
+
 npm create vite@latest .  -- --template react
-npm run dev - Запуск приложения vite (из файла package.json > "scripts": > "dev": "vite"
+npm run dev - Запуск приложения vite (из файла package.json > "scripts": > "dev": "vite")
 npm i - установка зависимостей из файла package.json
 
 npm install mobx --save 
 npm install mobx-react --save 
 npm install --save-dev @babel/plugin-proposal-decorators
 npm install --save-dev mobx-react-devtools --force
+
+npm i axios 
 
 npm install sass --save-dev --force

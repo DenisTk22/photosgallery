@@ -26,14 +26,16 @@ class Modal {
     }
 
     // обработка клика по кнопке "влево"
-    previousPhoto = (i, array) => {
-        let previousEl = array[i-1] // поиск в массиве с фото предыдущего адреса
+    previousPhoto = (i, arrayPhotos) => { // на входе индекс текущей фото и массив фото
+        let previousEl = arrayPhotos[i - 1] // поиск в массиве с фото предыдущего адреса
+        if (!previousEl) previousEl = arrayPhotos[arrayPhotos.length - 1] // если пролистали назад до элемента, которого нет, элемент = последнему элементу массива
         this.activeId = previousEl // присвоение activeId найденного адреса
     }
 
     // обработка клика по кнопке "вправо"
-    nextPhoto = (i, array) => {
-        let nextEl = array[i+1]
+    nextPhoto = (i, arrayPhotos) => {
+        let nextEl = arrayPhotos[i + 1]
+        if (!nextEl) nextEl = arrayPhotos[0]; // если пролистали вперед до элемента, которого нет, элемент = первому элементу массива
         this.activeId = nextEl
     }
 }
