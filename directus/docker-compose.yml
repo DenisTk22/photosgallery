@@ -12,13 +12,10 @@ services:
       ADMIN_EMAIL: "admin@example.com"
       ADMIN_PASSWORD: "d1r3ctu5"
       DB_CLIENT: "sqlite3"
-      # DB_HOST: localhost
-      # DB_PORT: 5173
       DB_FILENAME: "/directus/database/data.db"
       WEBSOCKETS_ENABLED: "true"
-
       CORS_ENABLED: "true"
-      CORS_ORIGIN: "http://localhost:8055/items/photosgallery"
-      CORS_METHODS: 'GET,POST,PATCH,DELETE'
-      CORS_ALLOWED_HEADERS: 'Content-Type,Authorization'
-      CORS_EXPOSED_HEADERS: 'Content-Range'
+      CORS_ORIGIN: "http://localhost:5173"
+      CORS_METHODS: "GET, POST, PATCH, DELETE"
+      CORS_ALLOWED_HEADERS: "Content-Type, Authorization, x-requested-with, API-Key, Cache-Control"
+      CORS_EXPOSED_HEADERS: "Content-Range"
